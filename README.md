@@ -158,11 +158,62 @@ filename = 'mbox.txt'
 top_50 = top_50_words(filename)
 x = 0
 if isinstance(top_50, list):
-    print("Las 50 palabras más comunes son:")
+    print("Las 50 palabras que más se repiten son:")
     for word, count in top_50:
         x += 1
         print(str(x) + ": " + str(word) + " -> " + str(count))
         
 else:
-    print(top_50) 
+    print(top_50)
+# Las 50 palabras que más se repiten son:
+1: edu -> 31260
+2: 2007 -> 24480
+3: org -> 22456
+4: sakaiproject -> 21747
+5: from -> 21721
+6: by -> 18028
+7: collab -> 17970
+8: x -> 16677
+9: received -> 16176
+10: 0 -> 16061
+11: iupui -> 14820
+12: umich -> 14724
+13: 8 -> 14702
+14: src -> 14622
+15: id -> 14408
+16: ac -> 14260
+17: uk -> 13874
+18: source -> 13306
+19: with -> 12757
+20: 12 -> 12716
+21: uhi -> 12579
+22: nakamura -> 12571
+23: uits -> 12571
+24: content -> 12130
+25: 0500 -> 11774
+26: java -> 11336
+27: 11 -> 10997
+28: branches -> 10422
+29: tool -> 10030
+30: dec -> 9267
+31: sak -> 9220
+32: nov -> 8988
+33: 1 -> 7734
+34: for -> 7715
+35: impl -> 7672
+36: mail -> 7207
+37: esmtp -> 7188
+38: paploo -> 7188
+39: dspam -> 7188
+40: 2 -> 7104
+41: 14 -> 6825
+42: 0000 -> 6729
+43: 3 -> 6103
+44: message -> 5507
+45: text -> 5423
+46: type -> 5418
+47: utf -> 5394
+48: mr -> 5391
+49: itd -> 5391
+50: localhost -> 5391 
 ```
