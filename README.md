@@ -135,5 +135,34 @@ print("La cantidad de consonantes en mbox.txt es:", contador_consonantes) # La c
     Solución:
 
 ```pseudocode
-  
+import re
+from collections import Counter
+
+def top_50_words(filename):
+    try:
+        with open(filename, 'r', encoding='utf-8') as file:
+            text = file.read()
+    except FileNotFoundError:
+        return "Error: El archivo no se encontró."
+    except Exception as e:
+        return f"Error al leer el archivo: {e}"
+
+    words = re.findall(r'\b\w+\b', text.lower()) 
+
+    word_counts = Counter(words)
+
+    top_50 = word_counts.most_common(50)
+
+    return top_50
+filename = 'mbox.txt'
+top_50 = top_50_words(filename)
+x = 0
+if isinstance(top_50, list):
+    print("Las 50 palabras más comunes son:")
+    for word, count in top_50:
+        x += 1
+        print(str(x) + ": " + str(word) + " -> " + str(count))
+        
+else:
+    print(top_50) 
 ```
