@@ -4,7 +4,7 @@ Código de tres puntos concernientes al reto número 11-srings
 ## 2. Según el archivo, procesar:
 
 ### - Cantidad de vocales.
-    Solución:
+Solución:
 ```pseudocode
 manejador_archivo = open('mbox.txt')
 
@@ -34,7 +34,7 @@ print("La cantidad de vocales en el archivo es :", contador_vocales) # La cantid
 ```
 
 ### - Cantidad de consonantes
-    Solución:
+Solución:
 
 ```pseudocode
 manejador_archivo = open('mbox.txt')
@@ -132,7 +132,7 @@ print("La cantidad de consonantes en mbox.txt es:", contador_consonantes) # La c
 ```
 
 ### - Listado de 50 palabras que más se repiten.
-    Solución:
+Solución:
 
 ```pseudocode
 import re
